@@ -1,0 +1,140 @@
+/* 
+
+Mobile Rules
+
+
+Tablet Media Query Rules
+
+
+Desktop Media Query Rules
+
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+#burger {
+    width: 20px;
+    justify-self: end;
+}
+
+#burger-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+#burger-menu li a {
+    text-decoration: none;
+    color: #5B0E14;
+}
+
+#hero {
+    height: 350px;
+}
+
+#products h2, #merch h2 {
+    margin-top: 20px;
+}
+
+#products .box, #merch .box {
+    height: 300px;
+}
+
+#merch {
+    padding-bottom: 60px;
+}
+
+footer {
+    background-color: #5B0E14;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer nav {
+    display: none;
+}
+
+/* Products Page */
+
+#drinks {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#drinks h2 {
+    color: #5B0E14; /* El color guinda de Dr Nut */
+    margin-bottom: 20px;
+}
+
+.can-box {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#can-red {
+    background-color: #5B0E14;
+}
+
+#can-yellow {
+    background-color: #f1e194;
+    color: #333;
+}
+
+#can-grey {
+    background-color: #333;
+}
+
+@media screen and (min-width:768px) {
+    
+    header nav {
+        order: 2;
+    }
+    
+    #burger {
+        display: none;
+    }
+
+    #burger-menu {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #products .box, #merch .box {
+        height: 250px;
+    }
+
+    footer nav {
+        display: block;
+    }
+
+    #footer-logo, #footer-social {
+        margin-top: 40px; 
+    }
+}
+
+
